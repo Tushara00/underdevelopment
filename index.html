@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css" />
+<!-- Fontawesome Css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+
+  </style>
+</head>
+
+<body>
+  <div id="main">
+    <nav>
+      <div id="bar">
+        <span id="span_1" class="class_1"></span>
+        <span id="span_2" class="class_2"></span>
+        <span id="span_3" class="class_3"></span>
+      </div>
+      <div class="logo">
+        <img src="IDESIGNBUILD LINE LOGO GREY.png" style="width: 306px;
+      height: 135px;
+      object-fit: cover;">
+      </div>
+
+      <div class="menu" id="menu">
+        <div class="" id="over">
+
+        </div>
+        <ul>
+
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+      </div>
+    </nav>
+    <div style="width:100%; margin-top:143px;">
+      <img src="Image (3).png" style="max-width: 100%;filter: grayscale(100%);">
+    </div>
+  </div>
+  <div style="width:100%;padding: 50px 0" ;>
+    <div class="slider" style="max-width:100%; overflow: hidden;">
+      <div class="Image-box">
+        <img src="Image (1).png">
+        <div>
+          <p> your content 1</p>
+        </div>
+      </div>
+      <div class="Image-box">
+        <img src="Image (1).png">
+
+      </div>
+      <div class="Image-box">
+        <img src="Image (1).png">
+
+      </div>
+      <div class="Image-box">
+        <img src="Image (1).png">
+      </div>
+      <div class="Image-box">
+        <img src="Image (1).png">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p class="copyright">demo consultants co. Copyright © <span id="getYear"></span></p>
+   <a href="#"><i class="fa-brands fa-facebook-f"></i></a> 
+   <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+   <a href="#"><i class="fa-brands fa-instagram"></i></a>
+   
+  </footer>
+  <script>
+
+
+    const menu = document.getElementById("menu");
+    const bar = document.getElementById("bar");
+    const over = document.getElementById("over");
+    const span_1 = document.getElementById("span_1")
+    const span_2 = document.getElementById("span_2")
+    const span_3 = document.getElementById("span_3")
+    const getYear = document.getElementById("getYear");
+    const d = new Date();
+let year = d.getFullYear();
+const gh = getYear.innerHTML = year; 
+console.log(gh);
+    bar.addEventListener("click", function () {
+      const html = document.getElementById("html");
+      console.log(html);
+      menu.classList.toggle('toggle');
+      over.classList.toggle('over');
+      span_2.classList.toggle('active');
+      span_1.classList.toggle('span_1');
+      span_3.classList.toggle('span_3');
+      html.classList.toggle("overflow");
+    });
+
+
+  </script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.slider').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        arrows: true,
+
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: true,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: true,
+              centerMode: true,
+              //centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
+</body>
+
+</html>

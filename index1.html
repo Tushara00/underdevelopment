@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <style>
+        .slick-next{
+            right:55px !important;       
+        }       
+.slick-next::before {
+    content: "→";
+    color:red;
+  font-size: 80px;
+  right:55px !important;
+}
+        .slick-prev, .slick-next{
+       
+        }
+        *{
+          box-sizing: border-box; 
+          margin: 0;
+          padding:0; 
+        }
+        .color{
+            background-color: antiquewhite;
+          
+        }
+    </style>
+</head>
+<body style="background-color: aquamarine;">
+    <div style="width:100%"; >
+    <div class="slider" style="max-width:100%; overflow: hidden;";>
+        <div class="color">
+            <img src="Image (1).png">
+            <div>
+           <p> your content 1</p>
+        </div>
+        </div>
+        <div class="color">
+            <img src="Image (1).png">
+       
+        </div>
+        <div class="color">
+            <img src="Image (1).png">
+       
+        </div>
+        <div class="color">
+            <img src="Image (1).png">
+        </div>
+        <div class="color">
+            <img src="Image (1).png">
+        </div>
+    </div>
+</div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  arrows: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        //centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+        });
+    </script>
+</body>
+</html>
