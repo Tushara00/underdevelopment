@@ -1,42 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <style>
-        .color{
-            background-color: antiquewhite;
-          
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      background: #eee;
+      margin:50px;
+      padding:10px;
+      border:3px solid #000;
+      display:flex;
+      width:1200px;
+      flex-wrap: wrap;
+    }
+    .items{
+      padding:20px;
+      width:350px;
+    }
+    .items img{
+      width:100%;
+    }
+    .item1{
+      background:orange;
+    }
+    .item2{
+      background:rgb(55, 0, 255);
+    }
+    .item3{
+      background:rgb(123, 255, 0);
+    }
+    .item4{
+      background: rgb(131, 153, 51);
+    }
+
+    .item5{
+      background: rgb(122, 21, 223);
+    }
+
+    .item6{
+      background: rgb(153, 92, 51);
+    }
+
+    .item7{
+      background: rgb(153, 51, 122);
+    }
+  </style>
 </head>
-<body style="background-color: aquamarine;">
-    <div class="slider">
-        <div>your content</div>
-        <div>your content</div>
-        <div>your content</div>
-        <div>your content</div>
-        <div>your content</div>
-      </div>
-    
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"></script>
-      <script type="text/javascript" src="slick/slick.min.js"></script>
-    
-      <script type="text/javascript">
-        $(document).ready(function(){
-          $('.slider').slick({
-            slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: false,
-  arrows:true,
-  autoplaySpeed: 2000,
-          });
-        });
-      </script>
-    
-      </body>
-    </html>
+<body>
+  <div class="container">
+<div class="items item1">
+  <img src="images/rahul-bhogal-Ub9LkIWxyec-unsplash.jpg">
+</div>
+<div class="items item2"> <img src="images/rahul-bhogal-Ub9LkIWxyec-unsplash.jpg"></div>
+<div class="items item3"> <img src="images/rahul-bhogal-Ub9LkIWxyec-unsplash.jpg"></div>
+<div class="items item4"> <img src="images/rahul-bhogal-Ub9LkIWxyec-unsplash.jpg"></div>
+<div class="items item5"> <img src="images/rahul-bhogal-Ub9LkIWxyec-unsplash.jpg"></div>
+<div class="items item6"> <img src="images/rahul-bhogal-Ub9LkIWxyec-unsplash.jpg"></div>
+  </div>
+</body>
+</html>

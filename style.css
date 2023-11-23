@@ -106,6 +106,7 @@ ul li a {
     font-size: 14px;
     font-weight: 400;
 }
+
 /* start slick carousel*/
 .slick-next {
     right: 55px !important;
@@ -156,7 +157,21 @@ ul li a {
     }
 
 }
+.banner{
+    background-image: url('images/back.jpg');
+    height: 650px;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+}
+@media only screen and (max-width: 576px) {
+.banner{
+    height:350px;
+}
+}
+/*portfolio css*/
 
+/*portfolio css*/
 @media only screen and (min-width: 800px) {
 
     .menu {
