@@ -168,6 +168,9 @@ ul li a {
 .banner{
     height:350px;
 }
+footer{
+    margin-top:0;
+}
 }
 /*portfolio css*/
 
@@ -223,6 +226,7 @@ ul li a {
 
 .Image-box img {
     max-width: 100%;
+    filter: grayscale(100%);
 }
 
 .slick-next::before,
@@ -240,6 +244,7 @@ ul li a {
     z-index: 9999;
 }
 footer{
+    margin-top:2rem;
     border-top:1px solid rgba(0,0,0,.1);
     padding: 15px 0 !important;
     text-align: center;
@@ -250,6 +255,11 @@ footer{
    color:#252424;
  
    line-height: 28px;
+ }
+ .slider{
+    width:1340px;
+    max-width: 100%;
+    margin: 0 auto;
  }
  .slider ul{
     height:initial !important;

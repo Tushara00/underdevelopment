@@ -4,13 +4,13 @@
     margin: 0 auto;
 }
 
+
 ul {
     display: flex;
     justify-content: start;
     height: inherit;
     text-align: center;
     flex-direction: inherit;
-
 }
 
 .portfolio {
@@ -39,13 +39,12 @@ justify-content: center;
     display: flex;
     flex-wrap: wrap;
     width: 1200px;
-  
     gap: 1rem;
     flex-grow: 1;
     border: 2px solid re;
     flex-direction: row;
     justify-content: center;
- border:1px solid red;
+
 }
 
 .gallery-box {
@@ -109,5 +108,10 @@ justify-content: center;
 @media only screen and (max-width:762px){
     .portfolio-heading h1{
         font-size: 27px;
+    }
+    ul{
+        height:100vh !important;
+        flex-direction: column !important;
+        text-align: initial;
     }
     }
