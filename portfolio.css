@@ -114,4 +114,7 @@ justify-content: center;
         flex-direction: column !important;
         text-align: initial;
     }
+    .portfolio{
+        margin:0 2rem;
+    }
     }

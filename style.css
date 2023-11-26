@@ -27,7 +27,7 @@ ul {
 }
 
 .menu {
-    width: calc(100% - 40%);
+    width: calc(100% - 30%);
     display: inline-block;
     background-color: rgb(150, 149, 149);
     top: 0;
@@ -63,7 +63,7 @@ nav #bar {
     position: absolute;
     top: 5rem;
     z-index: 999999;
-    background-color: grey;
+    background-color:rgb(207,205,205);
     padding: 12px;
 }
 
@@ -133,27 +133,31 @@ ul li a {
         transition: 4s ease-in-out;
         background-color: black;
         opacity: .5;
-        width: 40%;
+        width: 30%;
 
     }
 
     ul {
-        padding: 2rem 2rem;
+        padding: 7rem 2rem;
+       
     }
 
     .menu {
         position: fixed;
         transition: 2s ease-in-out;
         right: -15000px;
+        background-color: rgb(207,205,205) !important;
     }
-
+ul  li a{
+    font-size: 22px;
+}
     .logo {
         width: 100%;
         text-align: center;
     }
 
     ul li a {
-        color: white;
+        color: grey;
     }
 
 }
@@ -171,6 +175,7 @@ ul li a {
 footer{
     margin-top:0;
 }
+
 }
 /*portfolio css*/
 
