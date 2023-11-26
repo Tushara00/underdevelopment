@@ -16,6 +16,9 @@
     src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
 }
 /* Arrows */
+*{
+    overflow:
+}
 .slick-prev,
 .slick-next
 {
@@ -116,12 +119,13 @@
 /* Dots */
 .slick-dotted.slick-slider
 {
+  
     margin-bottom: 30px;
 }
 
 .slick-dots
 {
-    position: absolute;
+    position: ;
     bottom: -25px;
 
     display: block;
@@ -136,6 +140,7 @@
 }
 .slick-dots li
 {
+    overflow:hidden;
     position: relative;
 
     display: inline-block;
@@ -148,9 +153,11 @@
     cursor: pointer;
 }
 .slick-dots li button
+
 {
-    font-size: 0;
-    line-height: 0;
+    overflow:hidden;
+    font-size: 10px;
+    line-height: 15px;
 
     display: block;
 
@@ -177,8 +184,9 @@
 }
 .slick-dots li button:before
 {
+    overflow:hidden;
     font-family: 'slick';
-    font-size: 6px;
+    font-size: 25px;
     line-height: 20px;
 
     position: absolute;

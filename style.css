@@ -239,7 +239,70 @@ ul li a {
 .slick-next {
     z-index: 9999;
 }
+footer{
+    border-top:1px solid rgba(0,0,0,.1);
+    padding: 15px 0 !important;
+    text-align: center;
+ }
+ .copyright{
+   font-size: 14px;
+   font-family: 'Montserrat', sans-serif;
+   color:#252424;
+ 
+   line-height: 28px;
+ }
+ .slider ul{
+    height:initial !important;
+ }
 
+ .social-icons a {
+    
+    background-color: blac;
+    heigh:30px;
+    widt:30px;
+    border-radius: 50;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .social-icon { 
+    }
+    .social-icon-container h2{
+      font-size: 16px; 
+       font-family: 'Montserrat', sans-serif;
+      line-height: 26px;
+      font-weight: 400px;
+      color: #232323; 
+    }
+    .social-icons {
+       
+    display: flex !important;
+    flex-direction: row;
+    gap:1rem;
+    padding:.5rem 0;
+    
+    justify-content: center;
+    }
+    .social-icon{
+      
+     transition: outline 1s ease-in;
+   display:flex;
+   justify-content: center;
+      height:35px;
+      width:35px;
+      border-radius: 50%;
+      background-color: black;
+    }
+    .social-icon i{
+      color:rgb(255, 255, 255);
+     font-size: 14px;
+      }
+      .social-icon:hover{
+        border:2px solid rgb(170, 170, 170);
+        outline:5px solid rgb(165, 164, 164);
+      }
+ /*
 footer{
     padding:50px 0 25px;
     background-color: ;
@@ -265,6 +328,7 @@ footer a:hover{
 
     font-family: 'Montserrat', sans-serif;
 }
+*/
 footer span{
 display:inline-block;
 background-color:initial;
