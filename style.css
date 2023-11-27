@@ -9,7 +9,7 @@ body {
     list-style-type: none;
     outline: none;
     overflow-x: hidden;
-text-decoration: none;
+    text-decoration: none;
 }
 
 ul li {
@@ -63,7 +63,7 @@ nav #bar {
     position: absolute;
     top: 5rem;
     z-index: 999999;
-    background-color:rgb(207,205,205);
+    background-color: rgb(207, 205, 205);
     padding: 12px;
 }
 
@@ -118,6 +118,7 @@ ul li a {
     font-size: 80px;
     right: 55px !important;
 }
+
 /* end slick carousel*/
 @media only screen and (max-width: 800px) {
     .over {
@@ -139,18 +140,20 @@ ul li a {
 
     ul {
         padding: 7rem 2rem;
-       
+
     }
 
     .menu {
         position: fixed;
         transition: 2s ease-in-out;
         right: -15000px;
-        background-color: rgb(207,205,205) !important;
+        background-color: rgb(207, 205, 205) !important;
     }
-ul  li a{
-    font-size: 22px;
-}
+
+    ul li a {
+        font-size: 22px;
+    }
+
     .logo {
         width: 100%;
         text-align: center;
@@ -161,22 +164,26 @@ ul  li a{
     }
 
 }
-.banner{
+
+.banner {
     background-image: url('images/back.jpg');
     height: 650px;
     background-size: cover;
     background-position: center;
     filter: grayscale(100%);
 }
+
 @media only screen and (max-width: 576px) {
-.banner{
-    height:350px;
-}
-footer{
-    margin-top:0;
-}
+    .banner {
+        height: 350px;
+    }
+
+    footer {
+        margin-top: 0;
+    }
 
 }
+
 /*portfolio css*/
 
 /*portfolio css*/
@@ -248,76 +255,86 @@ footer{
 .slick-next {
     z-index: 9999;
 }
-footer{
-    margin-top:2rem;
-    border-top:1px solid rgba(0,0,0,.1);
+
+footer {
+    margin-top: 2rem;
+    border-top: 1px solid rgba(0, 0, 0, .1);
     padding: 15px 0 !important;
     text-align: center;
- }
- .copyright{
-   font-size: 14px;
-   font-family: 'Montserrat', sans-serif;
-   color:#252424;
- 
-   line-height: 28px;
- }
- .slider{
-    width:1340px;
+}
+
+.copyright {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: #252424;
+
+    line-height: 28px;
+}
+
+.slider {
+    width: 1340px;
     max-width: 100%;
     margin: 0 auto;
- }
- .slider ul{
-    height:initial !important;
- }
+}
 
- .social-icons a {
-    
+.slider ul {
+    height: initial !important;
+}
+
+.social-icons a {
+
     background-color: blac;
-    heigh:30px;
-    widt:30px;
+    heigh: 30px;
+    widt: 30px;
     border-radius: 50;
-    
-    display:flex;
+
+    display: flex;
     justify-content: center;
     align-items: center;
-    }
-    .social-icon { 
-    }
-    .social-icon-container h2{
-      font-size: 16px; 
-       font-family: 'Montserrat', sans-serif;
-      line-height: 26px;
-      font-weight: 400px;
-      color: #232323; 
-    }
-    .social-icons {
-       
+}
+
+.social-icon {}
+
+.social-icon-container h2 {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 26px;
+    font-weight: 400px;
+    color: #232323;
+}
+
+.social-icons {
+
     display: flex !important;
     flex-direction: row;
-    gap:1rem;
-    padding:.5rem 0;
-    
+    gap: 1rem;
+    padding: .5rem 0;
+
     justify-content: center;
-    }
-    .social-icon{
-      
-     transition: outline 1s ease-in;
-   display:flex;
-   justify-content: center;
-      height:35px;
-      width:35px;
-      border-radius: 50%;
-      background-color: black;
-    }
-    .social-icon i{
-      color:rgb(255, 255, 255);
-     font-size: 14px;
-      }
-      .social-icon:hover{
-        border:2px solid rgb(170, 170, 170);
-        outline:5px solid rgb(165, 164, 164);
-      }
- /*
+}
+
+.social-icon {
+
+    transition: outline 1s ease-in;
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.social-icon i {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+.social-icon:hover {
+    border: 2px solid rgb(170, 170, 170);
+    outline: 5px solid rgb(165, 164, 164);
+}
+
+/*
 footer{
     padding:50px 0 25px;
     background-color: ;
@@ -344,12 +361,12 @@ footer a:hover{
     font-family: 'Montserrat', sans-serif;
 }
 */
-footer span{
-display:inline-block;
-background-color:initial;
-width: initial;
+footer span {
+    display: inline-block;
+    background-color: initial;
+    width: initial;
     height: initial;
-    margin:initial;
-    transition:none;
+    margin: initial;
+    transition: none;
     overflow-x: initial;
 }

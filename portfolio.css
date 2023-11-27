@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fahkwang:wght@200;400&family=Montserrat&display=swap');
+
 #main {
     width: 1300px;
     margin: 0 auto;
@@ -19,22 +20,25 @@ ul {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-justify-content: center;
+    justify-content: center;
 }
-.portfolio-heading{
+
+.portfolio-heading {
     margin: 160px 0px 0;
     width: 100%;
     background-color: re;
     max-width: 100%;
-    padding-bottom:20px;
+    padding-bottom: 20px;
 }
-.portfolio-heading h1{
+
+.portfolio-heading h1 {
     font-family: 'Fahkwang', sans-serif;
     font-size: 56px;
-    color:#252424;
+    color: #252424;
     font-weight: 400;
     text-align: center;
 }
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -51,7 +55,7 @@ justify-content: center;
     width:
         350px;
 
-    background-color: blueviolet;
+   
     overflow: hidden;
     position: relative;
 
@@ -99,22 +103,24 @@ justify-content: center;
     margin-block-end: 0 ! important;
 }
 
-@media only screen and (max-width:992px){
-.portfolio{
-    padding: 20px 0px;
-}
+@media only screen and (max-width:992px) {
+    .portfolio {
+        padding: 20px 0px;
+    }
 }
 
-@media only screen and (max-width:762px){
-    .portfolio-heading h1{
+@media only screen and (max-width:762px) {
+    .portfolio-heading h1 {
         font-size: 27px;
     }
-    ul{
-        height:100vh !important;
+
+    ul {
+        height: 100vh !important;
         flex-direction: column !important;
         text-align: initial;
     }
-    .portfolio{
-        margin:0 2rem;
+
+    .portfolio {
+        margin: 0 2rem;
     }
-    }
+}
