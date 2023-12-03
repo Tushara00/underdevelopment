@@ -20,33 +20,56 @@ ul li {
 }
 
 ul {
+    border: 1px solid re;
+    justify-content: center;
     display: flex;
-    height: 100vh;
-    padding: 0 0 0 8rem;
-    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: beig;
+    position: relative;
 }
 
 .menu {
-    width: calc(100% - 30%);
-    display: inline-block;
-    background-color: rgb(150, 149, 149);
-    top: 0;
-    position: absolute;
+    width: 70%;
+    background-color: re;
+    ;
+
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    height: auto;
+    z-index: 99999999;
+    background-color: white;
 }
 
 nav {
-    z-index: 99999;
-    width: 100%;
-    height: auto;
-    background-color: rgb(255, 255, 255);
-    position: fixed;
-    top: 0;
+    display: flex;
+    max-width: 100%;
+    width: 1200px !important;
+    margin: 0 auto;
+    z-index: ;
+    background-color: aqu;
+    height: 100%;
 }
 
 .logo {
-    width: calc(100% - 60%);
+    width: 30%;
     background-color: rgb(255, 255, 255);
     display: inline-block;
+    background-color: orang;
+}
+
+nav #bar {
+    display: none;
+    right: 0;
+    position: absolute;
+
+    z-index: 999999;
+    background-color: rgb(207, 205, 205);
+    padding: 12px;
 }
 
 span {
@@ -54,17 +77,6 @@ span {
     height: 2px;
     background-color: rgb(90, 90, 90);
 
-}
-
-h2 {}
-
-nav #bar {
-    right: 0;
-    position: absolute;
-    top: 5rem;
-    z-index: 999999;
-    background-color: rgb(207, 205, 205);
-    padding: 12px;
 }
 
 .overflow {
@@ -103,8 +115,17 @@ ul li a {
     color: rgb(158, 158, 158);
     line-height: 40px;
     ;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
+    transition: color .5s ease-in;
+}
+
+ul li a:hover {
+    color: #4FBBD9;
+}
+
+.new {
+    color: red;
 }
 
 /* start slick carousel*/
@@ -120,127 +141,93 @@ ul li a {
 }
 
 /* end slick carousel*/
-@media only screen and (max-width: 800px) {
-    .over {
-        content: "";
-        height: 100vh;
-        position: fixed;
-        transform: ;
-        left: 0;
 
-        transform-origin: left;
-        top: 0;
-        z-index: 9999;
-        transition: 4s ease-in-out;
-        background-color: black;
-        opacity: .5;
-        width: 30%;
-
-    }
-
-    ul {
-        padding: 7rem 2rem;
-
-    }
-
-    .menu {
-        position: fixed;
-        transition: 2s ease-in-out;
-        right: -15000px;
-        background-color: rgb(207, 205, 205) !important;
-    }
-
-    ul li a {
-        font-size: 22px;
-    }
-
-    .logo {
-        width: 100%;
-        text-align: center;
-    }
-
-    ul li a {
-        color: grey;
-    }
-
-}
-
+/* not using
 .banner {
-    background-image: url('images/back.jpg');
+    background-image: url('images/PXL_20210519_162009864.jpg');
     height: 650px;
     background-size: cover;
     background-position: center;
-    filter: grayscale(100%);
+    filter: grayscal(100%);
 }
+*/
 
-@media only screen and (max-width: 576px) {
-    .banner {
-        height: 350px;
-    }
-
-    footer {
-        margin-top: 0;
-    }
-
-}
-
-/*portfolio css*/
-
-/*portfolio css*/
-@media only screen and (min-width: 800px) {
-
-    .menu {
-        top: 50%;
-        transform: translateY(-50%);
-
-        width: calc(100% - 40%);
-        display: inline-block;
-        background-color: rgb(255, 254, 254);
-        position: absolute;
-    }
-
-    .logo {
-        width: 40%;
-        text-align: center;
-    }
-
-    ul {
-        display: flex;
-        justify-content: inherit;
-        height: inherit;
-        text-align: center;
-        flex-direction: inherit;
-
-    }
-
-    ul li {
-        border-top: 1px solid #E4E4E4;
-        border-bottom: 1px solid #E4E4E4;
-
-    }
-
-    ul li:not(:last-child) {
-        padding-right: 30px;
-    }
-
-    #bar {
-        display: none;
-    }
-
-    .logo {}
-
-}
 
 .Image-box {
-    width: 300px;
-    margin-right: 15px;
+    overflow: hidden;
+    height: 350px;
+    margin-right: 60px;
+    border-radius: 5px;
+    ;
 }
 
 .Image-box img {
     max-width: 100%;
-    filter: grayscale(100%);
+    filter: grayscae(100%);
+
+    object-fit: cover;
 }
 
+.menu ul:after {
+    content: "";
+
+    left: 50%;
+    margin: 0 auto;
+    transform: translateX(-50%);
+    height: 2px;
+    background-color: #4FBBD9;
+    opacity: .1;
+    top: .8rem;
+    position: absolute;
+    right: 0;
+    display: inline-block;
+}
+
+.menu ul:before {
+    content: "";
+
+    left: 50%;
+    margin: 0 auto;
+    transform: translateX(-50%);
+    height: 2px;
+    background-color: #4FBBD9;
+    opacity: .1;
+    bottom: 1.3rem;
+    position: absolute;
+    right: 0;
+    display: inline-block;
+}
+
+.slider ul {
+    margin-top: 2rem;
+}
+
+.slick-dots {
+    bottom: 0 !important;
+}
+
+/*
+.gallery-box video{
+    width:100%;
+    height:100%;
+  
+    object-fit: cover;
+    border:none;
+    outline:none;
+}
+*/
+/*
+.active-play{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    height:auto !important;
+    width:80% !important;
+    box-shadow: 0 0 0 100vh rgba(0,0,0,.7);
+    z-index: 99999;
+}
+*/
 .slick-next::before,
 .slick-prev::before {
     color: #252424;
@@ -282,18 +269,11 @@ footer {
 }
 
 .social-icons a {
-
-    background-color: blac;
-    heigh: 30px;
-    widt: 30px;
     border-radius: 50;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.social-icon {}
 
 .social-icon-container h2 {
     font-size: 16px;
@@ -304,17 +284,14 @@ footer {
 }
 
 .social-icons {
-
     display: flex !important;
     flex-direction: row;
     gap: 1rem;
     padding: .5rem 0;
-
     justify-content: center;
 }
 
 .social-icon {
-
     transition: outline 1s ease-in;
     display: flex;
     justify-content: center;

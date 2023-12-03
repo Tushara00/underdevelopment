@@ -60,7 +60,20 @@ ul {
     position: relative;
 
 }
-
+.video-button{
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content:"";
+    width:60px;
+    height:60px;
+    background-color: red;
+    position: absolute;
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+    z-index: 22;
+    border-radius: 5px;
+}
 .gallery-box img {
     max-width: 100%;
     aspect-ratio: 4/4;
@@ -80,9 +93,9 @@ ul {
 
 }
 
-.gallery-box:hover .overlay {
+.gallery-box:hover .overlay{
     opacity: 0.7 !important;
-
+    z-index: 11;
 }
 
 .overlay-text {

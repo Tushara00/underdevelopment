@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="mediaQuery.css">
 
 </head>
 
@@ -30,16 +31,12 @@
       </div>
       <div class="menu" id="menu">
         <div class="" id="over">
-
         </div>
         <ul>
-
           <li><a href="index.html">Home</a></li>
           <li><a href="portfolio.html">Projects</a></li>
-
           <li><a href="contact.html">Contact</a></li>
         </ul>
-
       </div>
     </nav>
 
@@ -56,7 +53,7 @@
               <p>01</p>
             </div>
           </div>
-          <img src="images/rahul-bhogal-Ub9LkIWxyec-unsplash.jpg">
+          <video src="videos/20190329_153242.mp4"></video>
         </div>
         <div class="gallery-box">
           <div class='overlay'>
@@ -100,6 +97,74 @@
         </div>
       </div>
     </div>
+<!--gallery-->
+    <div class="portfolio">
+      <div>
+        <div class="portfolio-heading">
+          <h1>FEATURED PROJECTS</h1>
+        </div>
+      </div>
+      <div class="gallery">
+        <div class="gallery-box" style="height:450px;overflow: hidden;">
+          <div class="video-button"></div>
+          <div class='overlay'>           
+            <div class="overlay-text">         
+            </div>
+          </div>       
+          <video src="videos/20190329_153242.mp4"></video>      
+        </div>
+        
+        <div class="gallery-box" style="height:450px;overflow: hidden;">
+          <div class="video-button"></div>
+          <div class='overlay'>           
+            <div class="overlay-text">         
+            </div>
+          </div>       
+          <video src="videos/20190329_153242.mp4"></video>      
+        </div>
+        <div class="gallery-box">
+
+          <div class='overlay'>
+            <div class="overlay-text">
+          
+            </div>
+          </div>
+          <video src="videos/20190329_153242.mp4"></video>
+        </div>
+        <div class="gallery-box">
+          <div class='overlay'>
+            <div class="overlay-text">
+      
+            </div>
+          </div>
+          <video src="videos/20190329_153242.mp4"></video>
+        </div>
+        <div class="gallery-box">
+          <div class='overlay'>
+            <div class="overlay-text">
+             
+            </div>
+          </div>
+          <video src="videos/20190329_153242.mp4"></video>
+        </div>
+        <div class="gallery-box">
+          <div class='overlay'>
+            <div class="overlay-text">
+             
+            </div>
+          </div>
+          <video src="videos/20190329_153242.mp4"></video>
+        </div>
+        <div class="gallery-box">
+          <div class='overlay'>
+            <div class="overlay-text">
+              <p>06</p>
+            </div>
+          </div>
+          <video src="videos/20190329_153242.mp4"></video>
+        </div>
+      </div>
+    </div>
   </div>
 
 
@@ -127,7 +192,15 @@
    -->
   </footer>
   <script>
-    const menu = document.getElementById("menu");
+  
+
+
+  </script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script>const menu = document.getElementById("menu");
     const bar = document.getElementById("bar");
     const over = document.getElementById("over");
     const span_1 = document.getElementById("span_1")
@@ -148,43 +221,35 @@
       span_3.classList.toggle('span_3');
       html.classList.toggle("overflow");
     });
+    /* slick slider */
+$('.center').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
 
-
-  </script>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.slider').slick({
-        centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 3,
-        arrows: true,
-
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              arrows: true,
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 2
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              arrows: true,
-              centerMode: true,
-              //centerPadding: '40px',
-              slidesToShow: 1
-            }
-          }
-        ]
-      });
-    });
-  </script>
+    </script>
+ 
 </body>
 
 </html>

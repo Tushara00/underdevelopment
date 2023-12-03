@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        .menu a {
+            color: black; /* Default color */
+            text-decoration: none; /* Remove underline */
+            padding: 5px 10px;
+            margin: 0 10px;
+        }
+
+        .active {
+            color: red !important; /* Active color */
+        }
+    </style>
+</head>
+<body>
+    <h1>Hi</h1>
+    <h2>all</h2>
+    <button onclick="myFunction();">clcik</button>
+    <div class="menu">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Projects</a>
+        <a href="#" class="nav-link">Contact</a>
+    </div>
+
+    <script>
+       const navlinks = document.querySelectorAll(".nav-link");
+       navlinks.forEach(navLink =>{
+        navLink.addEventListener('click',()=>{
+            navlinks.forEach(otherNavLink =>{ 
+                otherNavLink.classList.remove("active");  
+            });
+            navLink.classList.add("active");
+        })
+      
+       })
+        
+    </script>
+</body>
+</html>
