@@ -50,7 +50,8 @@ nav {
     max-width: 100%;
     width: 1200px !important;
     margin: 0 auto;
-    z-index: ;
+   padding-top:.8rem;
+   padding-bottom:.8rem;
     background-color: aqu;
     height: 100%;
 }
@@ -154,17 +155,19 @@ ul li a:hover {
 
 
 .Image-box {
+    
     overflow: hidden;
     height: 350px;
     margin-right: 60px;
     border-radius: 5px;
+  
     ;
 }
 
 .Image-box img {
-    max-width: 100%;
+    width: 100%;
+    height:100%;
     filter: grayscae(100%);
-
     object-fit: cover;
 }
 
@@ -206,28 +209,7 @@ ul li a:hover {
     bottom: 0 !important;
 }
 
-/*
-.gallery-box video{
-    width:100%;
-    height:100%;
-  
-    object-fit: cover;
-    border:none;
-    outline:none;
-}
-*/
-/*
-.active-play{
-    position:fixed;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    height:auto !important;
-    width:80% !important;
-    box-shadow: 0 0 0 100vh rgba(0,0,0,.7);
-    z-index: 99999;
-}
-*/
+
 .slick-next::before,
 .slick-prev::before {
     color: #252424;
@@ -347,3 +329,48 @@ footer span {
     transition: none;
     overflow-x: initial;
 }
+
+.hero-text {
+    position: absolute;
+    z-index: 10000;
+    color: white;
+    text-align: cente;
+    top: 60%;
+    left: 20%;
+    transform: translate(-20%, -60%);
+ 
+ }
+ 
+ .hero-text h3 {
+    font-size: 21px;
+    text-align: cente;
+    
+    text-shadow: 1px 1px 3px #4FBBD9;
+ }
+ 
+ .hero-text h1 {
+   
+    text-shadow: 1px 1px 3px #4FBBD9;
+    font-size: 68px;
+    text-align: cente;
+    font-weight: bold;
+    position: relative;
+ }
+ .hero-text button{
+    padding:8px 25px;
+  
+    margin:1rem 0;
+    outline:none;
+    border:2px solid transparent;;
+    background-color: #4FBBD9;
+ }
+
+ .hero-text button a{
+    color:white;
+    font-family: 'Fahkwang', sans-serif;
+    font-size: 14px;
+ }
+ .hero-text button:hover{
+    background-color: transparent;
+    border:2px solid #4FBBD9;
+ }

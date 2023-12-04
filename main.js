@@ -1,9 +1,10 @@
 
 var Image = [
-  "images/IMG-5.jpg",
+  "images/IMG-1.jpg",
   "images/IMG-2.jpg",
-  "images/IMG-3.jpg",
   "images/IMG-4.jpg",
+  "images/IMG-6.jpg",
+  "images/IMG-9.jpg",
 ];
 
 var myImage = document.getElementById("myImage");
@@ -52,14 +53,3 @@ window.onload = image_change();
 
 /*portfolio js */
 
-
-var video = document.querySelectorAll('video');
-video.forEach(play =>play.addEventListener('click',() =>{
-  play.classList.toggle('active-play');
-  if(play.paused){
-    play.play();
-  }else{
-    play.pause();
-    play.currentTime = 0;
-  }
-}))

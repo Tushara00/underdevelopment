@@ -4,7 +4,10 @@ footer {
   border-top: 1px solid rgba(0, 0, 0, .1);
   padding: 10px 0 !important;
 }
-
+nav{
+  width:1140px;
+  padding:1rem 3rem;
+}
 .copyright {
   font-size: 14px;
 }
@@ -13,7 +16,7 @@ footer {
   margin: 180px auto 100px;
   ;
   background-color: re;
-  width: 1200px;
+  width: 1140px;
   max-width: 100%;
 
 }

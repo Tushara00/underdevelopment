@@ -1,11 +1,14 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Fahkwang:wght@200;400&family=Montserrat&display=swap');
 
 #main {
     width: 1300px;
     margin: 0 auto;
 }
-
-
+nav{
+    padding:2rem 2rem;
+}
+/*
 ul {
     display: flex;
     justify-content: start;
@@ -13,7 +16,7 @@ ul {
     text-align: center;
     flex-direction: inherit;
 }
-
+*/
 .portfolio {
     padding: 20px 100px;
     border: 2px solid re;
@@ -32,7 +35,7 @@ ul {
 }
 
 .portfolio-heading h1 {
-    font-family: 'Fahkwang', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 56px;
     color: #252424;
     font-weight: 400;
@@ -60,20 +63,7 @@ ul {
     position: relative;
 
 }
-.video-button{
-    top: 50%;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    content:"";
-    width:60px;
-    height:60px;
-    background-color: red;
-    position: absolute;
-    clip-path: polygon(0 0, 0% 100%, 100% 50%);
-    z-index: 22;
-    border-radius: 5px;
-}
+
 .gallery-box img {
     max-width: 100%;
     aspect-ratio: 4/4;
@@ -83,7 +73,7 @@ ul {
 
 .overlay {
     position: absolute;
-    background-color: black;
+    background-color: #DADADA;
     width: 100%;
     height: 100%;
     opacity: .5;
@@ -93,28 +83,10 @@ ul {
 
 }
 
-.gallery-box:hover .overlay{
-    opacity: 0.7 !important;
-    z-index: 11;
-}
 
-.overlay-text {
-    top: 50%;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
-.overlay-text p {
-    z-index: 9999;
-    color: white;
-    font-size: 50px;
-    background-color: yello;
-    ;
-    margin-block-start: 0 !important;
-    ;
-    margin-block-end: 0 ! important;
-}
+
+
 
 @media only screen and (max-width:992px) {
     .portfolio {
@@ -137,3 +109,73 @@ ul {
         margin: 0 2rem;
     }
 }
+
+.video-button{
+  
+  top:50%;
+    content:"";
+    width:60px;
+    height:60px;
+    background-color: red;
+  position: absolute;
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+    z-index: 999999999999999;
+    border-radius: 5px;
+}
+.gallery-box img {
+    max-width: 100%;
+    aspect-ratio: 4/4;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.overlay-text {
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay-text p {
+    z-index: 9999;
+    color: black;
+    font-size: 50px;
+    background-color: yello;
+    ;
+    margin-block-start: 0 !important;
+    ;
+    margin-block-end: 0 ! important;
+}
+
+
+.gallery-box video{
+    width:100%;
+    height:100%;
+  
+    object-fit: cover;
+    border:none;
+    outline:none;
+}
+
+
+  /*                                                                                                          .active-play{
+    position:fixed ;
+
+    top:50%;
+    left:50% ;
+    transform: translate(-50%, -50%) ;
+    height:auto;
+    width:80% ;
+    box-shadow: 0 0 0 100vh rgba(0,0,0,.7);
+    z-index: 99999 ;
+}
+*/
+.gallery-box:hover .overlay{
+    opacity: 0.7 !important;
+    z-index: 11;
+}
+*/
+
+
+  
