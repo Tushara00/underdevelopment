@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" id="html">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +8,10 @@
   <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css" />
   <!-- Fontawesome Css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="contact.css">
   <link rel="stylesheet" href="mediaQuery.css">
   <link rel="icon" type="image/x-icon" href="images/favicon.png">
-
 </head>
 
 <body>
@@ -27,20 +24,16 @@
           <span id="span_3" class="class_3"></span>
         </div>
         <div class="logo">
-         <a href="index.html"> <img src="images/HNACLogo-Main.png" style="width: 100%;
-       
+          <a href="index.html"> <img src="images/HNACLogo-Main.png" style="width: 100%;     
         object-fit: cover;"></a>
         </div>
-  
         <div class="menu" id="menu">
           <div class="" id="over">
           </div>
-          
           <ul>
-           
             <li><a href="index.html" class="active-link">Home</a></li>
-            <li><a href="portfolio.html"  class="active-link">Projects</a></li>
-            <li><a href="contact.html " class="active-link" >Contact</a></li>
+            <li><a href="portfolio.html" class="active-link">Projects</a></li>
+            <li><a href="contact.html " class="active-link">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -49,7 +42,6 @@
     <section class="contact-container">
       <h1>Contact us</h1>
       <div class="contact">
-
         <div class="left-content">
           <p>Have a question or comment?
             Use the form below to send us a message</p>
@@ -84,9 +76,8 @@
             <a style=""><i class="fa-solid fa-envelope"></i> <span style="">HereAndNowAC@gmail.com</span></a>
           </div>
           <div style=>
-            <a style=""><i class="fa-solid fa-phone"></i> <strong>786-306-3736</strong></a>
+            <a ><i class="fa-solid fa-phone"></i> <strong>786-306-3736</strong></a>
           </div>
-
           <div class="address">
             <p> demo Street<br>
               San Francisco, CA 94105,<br>
@@ -94,7 +85,6 @@
             </p>
           </div>
           <hr style="color: grey;height:.1px;opacity:.5;margin-bottom:2rem;">
-
           <div class="social-icon-container">
             <h2>Follow Us</h2>
             <div class="social-icons">
@@ -110,25 +100,15 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
   </div>
-
-
-
   <footer>
-       
     <img src="images/favicon.png" style="width:100px;height:70px;">
-    <p class="copyright"><span style="color:#4FBBD9;font-weight: bold;">Here&Now Air Conditioning</span> co. Copyright © <span id="getYear"></span></p>
-    <!--
-   <a href="#"><i class="fa-brands fa-facebook-f"></i></a> 
-   <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-   <a href="#"><i class="fa-brands fa-instagram"></i></a>
--->
+    <p class="copyright"><span style="color:#4FBBD9;font-weight: bold;">Here&Now Air Conditioning</span> co. Copyright ©
+      <span id="getYear"></span></p>
   </footer>
   <script>
-
     const menu = document.getElementById("menu");
     const bar = document.getElementById("bar");
     const over = document.getElementById("over");
@@ -150,43 +130,9 @@
       span_3.classList.toggle('span_3');
       html.classList.toggle("overflow");
     });
-
-
   </script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.slider').slick({
-        centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 3,
-        arrows: true,
-
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              arrows: true,
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 2
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              arrows: true,
-              centerMode: true,
-              //centerPadding: '40px',
-              slidesToShow: 1
-            }
-          }
-        ]
-      });
-    });
-  </script>
 </body>
-
 </html>

@@ -5,6 +5,7 @@ var Image = [
   "images/IMG-4.jpg",
   "images/IMG-6.jpg",
   "images/IMG-9.jpg",
+  "images/IMG-16.jpg",
 ];
 
 var myImage = document.getElementById("myImage");

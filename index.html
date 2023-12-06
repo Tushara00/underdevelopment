@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Here&Now|AirConditioning</title>
-  
   <link rel="stylesheet" type="text/css" href="slick/slick.css" />
   <!--<link rel="stylesheetgit" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css" />-->
   <link rel="stylesheet" href="slick/slick-theme2.css">
@@ -20,38 +19,34 @@
 <body>
   <div id="main">
     <header>
-    <nav>
-      <div id="bar">
-        <span id="span_1" class="class_1"></span>
-        <span id="span_2" class="class_2"></span>
-        <span id="span_3" class="class_3"></span>
-      </div>
-      <div class="logo">
-      <a href="index.html"> <img src="images/HNACLogo-Main.png" style="width: 100%;
-     
-      object-fit: cover;"></a>
-      </div>
-
-      <div class="menu" id="menu">
-        <div class="" id="over">
+      <nav>
+        <div id="bar">
+          <span id="span_1" class="class_1"></span>
+          <span id="span_2" class="class_2"></span>
+          <span id="span_3" class="class_3"></span>
         </div>
-        
-        <ul>
-         
-          <li><a href="index.html" class="active-link">Home</a></li>
-          <li><a href="portfolio.html"  class="active-link">Projects</a></li>
-          <li><a href="contact.html " class="active-link" >Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-    <div class="banne"; style="width:100%;height:650px;overflow: hidden;position: relative;">
+        <div class="logo">
+          <a href="index.html"> <img src="images/HNACLogo-Main.png" style="width: 100%;  
+      object-fit: cover;"></a>
+        </div>
+        <div class="menu" id="menu">
+          <div class="" id="over">
+          </div>
+          <ul>
+            <li><a href="index.html" class="active-link">Home</a></li>
+            <li><a href="portfolio.html" class="active-link">Projects</a></li>
+            <li><a href="contact.html " class="active-link">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="banne" ; style="width:100%;height:650px;overflow: hidden;position: relative;">
       <div class="hero-text">
         <h1>Here&Now</h1>
         <h3>Air Conditioning</h3>
         <button><a href="contact.html">Contact Us</a></button>
       </div>
-<img src="images/IMG-1.jpg"; style="width:100%; object-fit: cover; height:100%"; id="myImage">
+      <img src="images/IMG-1.jpg" ; style="width:100%; object-fit: cover; height:100%" ; id="myImage">
     </div>
   </div>
   </div>
@@ -65,7 +60,6 @@
       </div>
       <div class="Image-box">
         <img src="images/IMG-3.jpg">
-
       </div>
       <div class="Image-box">
         <img src="images/IMG-4.jpg">
@@ -87,6 +81,12 @@
         <img src="images/IMG-9.jpg">
       </div>
       <div class="Image-box">
+        <img src="images/IMG-10.jpg">
+      </div>
+      <div class="Image-box">
+        <img src="images/IMG-11.jpg">
+      </div>
+      <div class="Image-box">
         <img src="images/IMG-1.jpg">
       </div>
     </div>
@@ -94,9 +94,9 @@
 
   <footer>
     <div class="social-icon-container">
-      
+
       <img src="images/favicon.png" style="width:100px;height:70px;">
-    
+
       <h2>Follow Us</h2>
       <div class="social-icons">
         <div class="social-icon">
@@ -110,12 +110,9 @@
         </div>
       </div>
     </div>
-    <p class="copyright"><span style="color:#4FBBD9;font-weight: bold;">Here&Now Air Conditioning</span> co. Copyright © <span id="getYear"></span></p>
-    <!--
-   <a href="#"><i class="fa-brands fa-facebook-f"></i></a> 
-   <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-   <a href="#"><i class="fa-brands fa-instagram"></i></a>
-   -->
+    <p class="copyright"><span style="color:#4FBBD9;font-weight: bold;">Here&Now Air Conditioning</span> co. Copyright ©
+      <span id="getYear"></span></p>
+
   </footer>
   <script>
 
@@ -128,13 +125,13 @@
     const span_3 = document.getElementById("span_3")
     const getYear = document.getElementById("getYear");
     const activeLinks = document.querySelectorAll(".active-link");
-console.log(activeLinks );
-    activeLinks.forEach(function(link) {
-     
-  link.addEventListener("click", function() {
-    link.classList.add("new");
-  });
-});
+    console.log(activeLinks);
+    activeLinks.forEach(function (link) {
+
+      link.addEventListener("click", function () {
+        link.classList.add("new");
+      });
+    });
     const d = new Date();
     let year = d.getFullYear();
     const gh = getYear.innerHTML = year;

@@ -6,7 +6,7 @@
     margin: 0 auto;
 }
 nav{
-    padding:2rem 2rem;
+    padding:2rem 2.9rem;
 }
 /*
 ul {
@@ -106,8 +106,9 @@ ul {
     }
 
     .portfolio {
-        margin: 0 2rem;
+        margin: 5rem 2rem;
     }
+ 
 }
 
 .video-button{
